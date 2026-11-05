@@ -29,7 +29,7 @@ docker compose exec -T db psql -U postgres -d transactions_db < sql/01_schema.sq
    
 ## Пример работы (визуализация)
 На графике синим цветом показаны обычные транзакции, а красными крестиками — выявленные аномалии (Z-score > 3):
-https://outputs/anomalies_scatter.png
+![Аномалии](outputs/anomalies_scatter.png)
 
 ## Что демонстрирует проект
 pandas: groupby + transform (расчет среднего и стандартного отклонения по каждому клиенту в рамках его группы), np.where (бинарная классификация), unstack (сводные таблицы), .str методы.
